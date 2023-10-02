@@ -10,7 +10,7 @@ config.h:
 	cp config.def.h $@
 
 clean:
-	$(RM) $(BINS) $(addsuffix .o,$(BINS))
+	rm -f dwlb *.o *-protocol.*
 
 install: all
 	install -D -t $(PREFIX)/bin $(BINS)
